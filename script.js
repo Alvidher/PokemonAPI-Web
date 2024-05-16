@@ -176,9 +176,10 @@ function clearTeam() {
 }
 
 document.getElementById('borrar-equipo').addEventListener('click', function() {
+    nombre.disabled = false;
+    
     if (Team.length > 0) {
         clearTeam();
-        nombre.disabled = false;
     } else {
         console.log('Team is empty.');
         showSquad();
