@@ -181,6 +181,7 @@ document.getElementById('borrar-equipo').addEventListener('click', function() {
         clearTeam();
     } else {
         console.log('Team is empty.');
+        showSquad();
     }
     
 });
