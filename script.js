@@ -38,7 +38,7 @@ async function displayPokemon(pokemonName) {
         addButton.style.backgroundColor = "gray";
         addButton.style.color = "white";
         addButton.style.cursor = "not-allowed";
-    } else if (Team.length >= 3) {
+    } else if (Team.length == 3) {
         addButton.disabled = true;
         addButton.innerText = "Team Full";
         addButton.style.backgroundColor = "gray";
@@ -176,10 +176,10 @@ function clearTeam() {
 }
 
 document.getElementById('borrar-equipo').addEventListener('click', function() {
-    nombre.disabled = false;
     
     if (Team.length > 0) {
         clearTeam();
+        nombre.disabled = false;
     } else {
         console.log('Team is empty.');
         showSquad();
