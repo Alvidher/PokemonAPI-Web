@@ -31,10 +31,11 @@ html{
 }
 
 #nombre {
-    font-size: 24px;
+    font-size: 22px;
     border-radius: 5px;
     border: 1px solid #ccc;
     margin-right: 5px;
+    padding: 3px 10px;
 }
 
 #buscar {
